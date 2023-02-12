@@ -4,12 +4,12 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import log_factory.MyLog;
 
 import static project_constants.Constants.*;
 
@@ -29,12 +29,12 @@ public class DriverFactory {
 	public static WebDriver initializeWebDriver(String browserName) {
 		
 		switch (browserName.toLowerCase()) {
-		
+	
 			case CHROME_BROWSWER:
 				WebDriverManager.chromedriver().setup();
-				ChromeOptions chromeOptions = new ChromeOptions();
-				chromeOptions.addArguments("--headless");
-				threadLocalDriver.set(new ChromeDriver(chromeOptions));
+//				ChromeOptions chromeOptions = new ChromeOptions();
+//				chromeOptions.addArguments("--headless");
+//				threadLocalDriver.set(new ChromeDriver(chromeOptions));
 				threadLocalDriver.set(new ChromeDriver());
 				break;
 			
@@ -54,13 +54,13 @@ public class DriverFactory {
 				break;
 			
 			default:
-				System.out.println("You have provided wrong browser name: "+browserName+"  which is incorrect. Please provide valid browser name.");
+				MyLog.info("You have provided wrong browser name: "+browserName+"  which is incorrect. Please provide valid browser name.");
 				break;
 		}
 		threadLocalDriver.get().manage().deleteAllCookies();
 		threadLocalDriver.get().manage().window().maximize();
 		threadLocalDriver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(IMPLICIT_WAIT_VALUE));
-		
+		MyLog.info("Driver initialization is done for browser: "+browserName+" with id: "+Thread.currentThread().getId());
 		return threadLocalDriver.get();
 	}
 	
@@ -73,7 +73,6 @@ public class DriverFactory {
 	 * */
 	public static void removeDriverFromThreadLocal() {
 		threadLocalDriver.remove();
+		MyLog.info("Driver: "+Thread.currentThread().getId()+" is now removed from ThreadLocal");
 	}
-	
-	
 }

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Result</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Friday, February 10, 2023, 08:13 pm (ACDT)</span></a>
+<a href="#"><span class="badge badge-primary">Sunday, February 12, 2023, 10:11 pm (ACDT)</span></a>
 </li>
 </ul>
 </div>
@@ -79,9 +79,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testcases.MyTest: test_01</p>
+            <p class="name">testcases.MyTest: validateErrorMessageOnContactPage</p>
             <p class="text-sm">
-              <span>8:14:12 pm</span> / <span>00:00:02:367</span>
+              <span>10:11:35 pm</span> / <span>00:00:17:255</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -89,10 +89,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testcases.MyTest: test_01</h5>
-<span class='badge badge-success'>02.10.2023 8:14:12 pm</span>
-<span class='badge badge-danger'>02.10.2023 8:14:15 pm</span>
-<span class='badge badge-default'>00:00:02:367</span>
+<h5 class="test-status text-fail">testcases.MyTest: validateErrorMessageOnContactPage</h5>
+<span class='badge badge-success'>02.12.2023 10:11:35 pm</span>
+<span class='badge badge-danger'>02.12.2023 10:11:52 pm</span>
+<span class='badge badge-default'>00:00:17:255</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -103,29 +103,113 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:14:14 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:11:35 pm</td>
         <td>
-          <details><summary><b><font color=red>Exception Occured, click to see details:</font></b></summary>[org.testng.Assert.fail(Assert.java:110)<br> org.testng.Assert.failNotEquals(Assert.java:1577)<br> org.testng.Assert.assertTrue(Assert.java:56)<br> org.testng.Assert.assertTrue(Assert.java:66)<br> testcases.MyTest.test_01(MyTest.java:18)<br> java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br> java.base/java.lang.reflect.Method.invoke(Method.java:577)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:829)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br> org.testng.SuiteRunner.run(SuiteRunner.java:330)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br> org.testng.TestNG.runSuites(TestNG.java:1099)<br> org.testng.TestNG.run(TestNG.java:1067)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
+          Home Page is opened
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:11:36 pm</td>
+        <td>
+          Contact Page is opened
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:11:36 pm</td>
+        <td>
+          Submit button is clicked
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:11:36 pm</td>
+        <td>
+          Error Message is displyed on forename field: Forename is required
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:11:36 pm</td>
+        <td>
+          Error Message is displyed on email field: Email is required
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:11:36 pm</td>
+        <td>
+          Error Message is not displyed on message field or error message is incorrect. It should be: Message is required
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:11:36 pm</td>
+        <td>
+          Forename field is populated with: Rohit
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:11:36 pm</td>
+        <td>
+          Email field is populated with: rohitcse073@gmail.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:11:37 pm</td>
+        <td>
+          Message field is populated with: This message is from Rohit
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:11:42 pm</td>
+        <td>
+          Error message is not displayed after populating forename field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:11:47 pm</td>
+        <td>
+          Error message is not displayed after populating email field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:11:52 pm</td>
+        <td>
+          Error message is not displayed after populating message field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:11:52 pm</td>
+        <td>
+          <details><summary><b><font color=red>Exception Occured, click to see details:</font></b></summary>[org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)<br> org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)<br> testcases.MyTest.validateErrorMessageOnContactPage(MyTest.java:124)<br> java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br> java.base/java.lang.reflect.Method.invoke(Method.java:577)<br> org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br> org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br> org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br> org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)<br> org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br> org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br> org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br> java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br> org.testng.TestRunner.privateRun(TestRunner.java:829)<br> org.testng.TestRunner.run(TestRunner.java:602)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:437)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)<br> org.testng.SuiteRunner.run(SuiteRunner.java:330)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br> org.testng.TestNG.runSuites(TestNG.java:1099)<br> org.testng.TestNG.run(TestNG.java:1067)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details> 
 
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:14:15 pm</td>
+        <td>10:11:52 pm</td>
         <td>
           <b><font color=red>screenshot of failure</font></b>
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/rohit/Documents/Java/Selenium/Rohit_HybridFramework/report/screenshots/2023-02-10-20:14:14.367763-test_01.jpg' src="/Users/rohit/Documents/Java/Selenium/Rohit_HybridFramework/report/screenshots/2023-02-10-20:14:14.367763-test_01.jpg">
+<img data-featherlight='/Users/rohit/Documents/Java/Selenium/Rohit_HybridFramework/report/screenshots/2023-02-12-22:11:52.174532-validateErrorMessageOnContactPage.jpg' src="/Users/rohit/Documents/Java/Selenium/Rohit_HybridFramework/report/screenshots/2023-02-12-22:11:52.174532-validateErrorMessageOnContactPage.jpg">
     
     </div></div>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:14:15 pm</td>
+        <td>10:11:52 pm</td>
         <td>
-          <span class='badge white-text red'><b>Test Method::  test_01 failed.</b></span>
+          <span class='badge white-text red'><b>Test Method::  validateErrorMessageOnContactPage failed.</b></span>
         </td>
       </tr>
   </tbody>
@@ -147,13 +231,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Friday, February 10, 2023, 08:13 pm (ACDT)</h3>
+<h3>Sunday, February 12, 2023, 10:11 pm (ACDT)</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Friday, February 10, 2023, 08:14 pm (ACDT)</h3>
+<h3>Sunday, February 12, 2023, 10:11 pm (ACDT)</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -204,10 +288,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='46%'><b>7</b> events passed</small></div>
 <div>
-<small data-tooltip='100%'><b>3</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='26%'><b>4</b> events failed,
+<b data-tooltip='%'>4</b> others
 </small>
 </div>
 </div>
@@ -223,7 +307,7 @@
 </div></div>
 <script>
 var timeline = {
-"testcases.MyTest: test_01":2.367
+"testcases.MyTest: validateErrorMessageOnContactPage":17.255
 };
 </script>
 <div class="row">
@@ -234,15 +318,15 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>Name</td>
-<td>Rohit Report</td>
-</tr>
-<tr>
 <td>Organization</td>
-<td>Rohit Framework</td>
+<td>rohit.com</td>
 </tr>
 <tr>
-<td>Browser</td>
+<td>Environment</td>
+<td>SIT</td>
+</tr>
+<tr>
+<td>Brownser Name</td>
 <td>Chrome</td>
 </tr>
 </tbody>
@@ -271,11 +355,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 3,
+passEvents: 7,
+failEvents: 4,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 4
 };
 </script>        </div>
       </div>

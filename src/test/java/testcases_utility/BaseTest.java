@@ -6,12 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import driver_factory.DriverFactory;
+import log_factory.MyLog;
 import object_repository_utility.BasePage;
 import object_repository_utility.ParentPage;
 import utility.PropertiesReader;
-
-import static project_constants.Constants.*;
 
 
 public class BaseTest {
@@ -25,17 +26,17 @@ public class BaseTest {
 	public void setUp() {
 		
 		propReader = new PropertiesReader();
-		DriverFactory.initializeWebDriver(propReader.getDataFromPropertiesFile(BROWSER_NAME));
+		DriverFactory.initializeWebDriver(propReader.getDataFromPropertiesFile("browserName"));
 		driver = DriverFactory.getDriver();
-		driver.get(propReader.getDataFromPropertiesFile(APP_URL));
+		driver.get(propReader.getDataFromPropertiesFile("appUrl"));
+		MyLog.info("Launching Browser");
 		parentPage = new BasePage(driver);
 	}
 	
 	@AfterMethod
 	public void tearDown(ITestResult result) {
-		
+		MyLog.info("Closing Browser");
 		driver.quit();
 		DriverFactory.removeDriverFromThreadLocal();
 	}
-
 }

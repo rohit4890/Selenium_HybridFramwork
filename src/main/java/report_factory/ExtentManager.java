@@ -32,9 +32,9 @@ public class ExtentManager {
 		htmlReporter.config().setTheme(Theme.STANDARD);
 
 		extent = new ExtentReports();
-		extent.setSystemInfo("Name", "Rohit Report");
-		extent.setSystemInfo("Organization", "Rohit Framework");
-		extent.setSystemInfo("Browser", "Chrome");
+		extent.setSystemInfo(EXTENT_ORGANIZATION_NAME, "rohit.com");
+		extent.setSystemInfo(ENVIRONMENT, "SIT");
+		extent.setSystemInfo(BROWSER_NAME, "Chrome");
 		extent.attachReporter(htmlReporter);
 
 		return extent;

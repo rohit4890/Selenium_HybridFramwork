@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-10T20:13:51 ACDT" name="Rohit Automation Suite" finished-at="2023-02-10T20:14:15 ACDT" duration-ms="23584">
+  <suite started-at="2023-02-12T22:11:23 ACDT" name="Rohit Automation Suite" finished-at="2023-02-12T22:11:52 ACDT" duration-ms="29527">
     <groups>
     </groups>
-    <test started-at="2023-02-10T20:13:51 ACDT" name="Rohit Test" finished-at="2023-02-10T20:14:15 ACDT" duration-ms="23584">
+    <test started-at="2023-02-12T22:11:23 ACDT" name="Rohit Test" finished-at="2023-02-12T22:11:52 ACDT" duration-ms="29527">
       <class name="testcases.MyTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.MyTest@6f63b475]" started-at="2023-02-10T20:13:51 ACDT" name="setUp" finished-at="2023-02-10T20:14:12 ACDT" duration-ms="20888" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.MyTest@b2c5e07]" started-at="2023-02-12T22:11:23 ACDT" name="setUp" finished-at="2023-02-12T22:11:35 ACDT" duration-ms="12074" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test_01()[pri:0, instance:testcases.MyTest@6f63b475]" started-at="2023-02-10T20:14:12 ACDT" name="test_01" finished-at="2023-02-10T20:14:14 ACDT" duration-ms="1707" status="FAIL">
+        <test-method signature="validateErrorMessageOnContactPage()[pri:0, instance:testcases.MyTest@b2c5e07]" started-at="2023-02-12T22:11:35 ACDT" name="validateErrorMessageOnContactPage" finished-at="2023-02-12T22:11:52 ACDT" duration-ms="16968" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[The following asserts failed:
+expected [Message is required] but found [Forename is required]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at org.testng.Assert.assertTrue(Assert.java:66)
-at testcases.MyTest.test_01(MyTest.java:18)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Message is required] but found [Forename is required]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testcases.MyTest.validateErrorMessageOnContactPage(MyTest.java:124)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -54,12 +54,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_01 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.MyTest@6f63b475]" started-at="2023-02-10T20:14:15 ACDT" name="tearDown" finished-at="2023-02-10T20:14:15 ACDT" duration-ms="200" status="PASS">
+        </test-method> <!-- validateErrorMessageOnContactPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.MyTest@b2c5e07]" started-at="2023-02-12T22:11:52 ACDT" name="tearDown" finished-at="2023-02-12T22:11:52 ACDT" duration-ms="130" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test_01 status=FAILURE method=MyTest.test_01()[pri:0, instance:testcases.MyTest@6f63b475] output={null}]]]>
+                <![CDATA[[TestResult name=validateErrorMessageOnContactPage status=FAILURE method=MyTest.validateErrorMessageOnContactPage()[pri:0, instance:testcases.MyTest@b2c5e07] output={null}]]]>
               </value>
             </param>
           </params>

@@ -24,11 +24,11 @@
 	<groupId>Rohit_HybridFramework</groupId>
 	<artifactId>Rohit_HybridFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<build>
 		<pluginManagement>
 			<plugins>
-			
+
 				<!-- This plugin execute the testNG xml file. Without this we can't execute with maven -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -40,11 +40,11 @@
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
-				
+
 			</plugins>
 		</pluginManagement>
 	</build>
-	
+
 	<dependencies>
 
 		<!-- This is for Selenium -->
@@ -89,6 +89,19 @@
 			<groupId>io.rest-assured</groupId>
 			<artifactId>json-schema-validator</artifactId>
 			<version>5.3.0</version>
+		</dependency>
+
+		<!-- This is for log4j CORE-->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.19.0</version>
+		</dependency>
+		<!-- This is for log4j API -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.19.0</version>
 		</dependency>
 
 	</dependencies>

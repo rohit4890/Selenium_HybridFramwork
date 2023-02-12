@@ -7,12 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import log_factory.MyLog;
+
 public class BasePage extends ParentPage{
 
-	/*
-	 * Constructor of BasePage
-	 * @param: WebDriver instance
-	 */
 	public BasePage(WebDriver driver) {
 		super(driver);
 	}
@@ -30,7 +28,7 @@ public class BasePage extends ParentPage{
 	 */
 	@Override
 	public String getCurrentURL() {
-		return driver. getCurrentUrl();
+		return driver.getCurrentUrl();
 	}
 	
 	/*
@@ -63,7 +61,7 @@ public class BasePage extends ParentPage{
 			element = driver.findElement(locator);
 			return element;
 		}catch (Exception e) {
-			System.out.println("Locator: "+locator+" is wrong in class: "+getClass().getName());
+			MyLog.error("Locator: "+locator+" is wrong in class: "+getClass().getName());
 			e.printStackTrace();
 		}
 		return element;
@@ -83,7 +81,7 @@ public class BasePage extends ParentPage{
 			element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 			return element;
 		}catch (Exception e) {
-			System.out.println("Locator: "+locator+" is wrong in class: "+getClass().getName());
+			MyLog.error("Locator: "+locator+" is wrong in class: "+getClass().getName());
 			e.printStackTrace();
 		}
 		return element;
@@ -103,7 +101,7 @@ public class BasePage extends ParentPage{
 			element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 			return element;
 		}catch (Exception e) {
-			System.out.println("Locator: "+locator+" is wrong in class: "+getClass().getName());
+			MyLog.error("Locator: "+locator+" is wrong in class: "+getClass().getName());
 			e.printStackTrace();
 		}
 		return element;
@@ -123,7 +121,7 @@ public class BasePage extends ParentPage{
 			element = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
 			return element;
 		}catch (Exception e) {
-			System.out.println("Locator: "+locator+" is wrong in class: "+getClass().getName());
+			MyLog.error("Locator: "+locator+" is wrong in class: "+getClass().getName());
 			e.printStackTrace();
 		}
 		return element;

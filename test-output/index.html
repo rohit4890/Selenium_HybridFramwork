@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Rohit_Automation_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Rohit_Automation_Suite" title="testcases.MyTest" class="method navigator-link" hash-for-method="test_01">test_01</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Rohit_Automation_Suite" title="testcases.MyTest" class="method navigator-link" hash-for-method="validateErrorMessageOnContactPage">validateErrorMessageOnContactPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Rohit_Automation_Suite -->
@@ -126,13 +126,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_01">
-                  </a> <!-- test_01 -->
-                  <span class="method-name">test_01</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at testcases.MyTest.test_01(MyTest.java:18)
+                  <a name="validateErrorMessageOnContactPage">
+                  </a> <!-- validateErrorMessageOnContactPage -->
+                  <span class="method-name">validateErrorMessageOnContactPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Message is required] but found [Forename is required]
+	at testcases.MyTest.validateErrorMessageOnContactPage(MyTest.java:124)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -195,14 +196,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_01')
+data.setCell(0, 1, 'validateErrorMessageOnContactPage')
 data.setCell(0, 2, 'testcases.MyTest')
-data.setCell(0, 3, 1707);
+data.setCell(0, 3, 16968);
 window.suiteTableData['Rohit_Automation_Suite']= { tableData: data, tableDiv: 'times-div-Rohit_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Rohit_Automation_Suite">
               </div> <!-- times-div-Rohit_Automation_Suite -->
             </div> <!-- times-div -->
@@ -236,12 +237,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test_01</span>
-                <span class="method-start">20891 ms</span>
+                <span class="method-name">validateErrorMessageOnContactPage</span>
+                <span class="method-start">12076 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=test_01 status=FAILURE method=MyTest.test_01()[pri:0, instance:testcases.MyTest@6f6...)</span>
-                <span class="method-start">23338 ms</span>
+                <span class="method-name">tearDown([TestResult name=validateErrorMessageOnContactPage status=FAILURE method=MyTest.validateErrorMessage...)</span>
+                <span class="method-start">29359 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

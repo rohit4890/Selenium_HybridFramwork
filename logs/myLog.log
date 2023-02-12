@@ -1,0 +1,7 @@
+[INFO ] 2023-02-12 22:11:32,468 log_factory.MyLog:20 - Driver initialization is done for browser: chrome with id: 1
+[INFO ] 2023-02-12 22:11:35,170 log_factory.MyLog:20 - Launching Browser
+[INFO ] 2023-02-12 22:11:35,201 log_factory.MyLog:12 - <<==================================validateErrorMessageOnContactPage method started. ===================================>>
+[ERROR] 2023-02-12 22:11:36,476 log_factory.MyLog:28 - Error message on message field should be: Forename is required
+[INFO ] 2023-02-12 22:11:52,454 log_factory.MyLog:16 - <<===================================testcases.MyTest method ended. ===================================>>
+[INFO ] 2023-02-12 22:11:52,465 log_factory.MyLog:20 - Closing Browser
+[INFO ] 2023-02-12 22:11:52,586 log_factory.MyLog:20 - Driver: 1 is now removed from ThreadLocal

@@ -15,6 +15,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
+import log_factory.MyLog;
 import report_factory.ExtentManager;
 import utility.TakeScreenShot;
 
@@ -27,12 +28,14 @@ public class MyListener implements ITestListener {
 		ExtentTest test = extent
 				.createTest(result.getTestClass().getName() + ": " + result.getMethod().getMethodName());
 		extentTest.set(test);
+		MyLog.startTestCase(result.getMethod().getMethodName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		String message = "<b>Test Method:  " + result.getMethod().getMethodName() + " successful.</b>";
 		Markup m = MarkupHelper.createLabel(message, ExtentColor.GREEN);
 		extentTest.get().log(Status.PASS, m);
+		MyLog.endTestCase(result.getTestClass().getName());
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -55,12 +58,14 @@ public class MyListener implements ITestListener {
 		String message = "<b>Test Method::  " + methodName + " failed.</b>";
 		Markup m = MarkupHelper.createLabel(message, ExtentColor.RED);
 		extentTest.get().log(Status.FAIL, m);
+		MyLog.endTestCase(result.getTestClass().getName());
 	}
 
 	public void onTestSkipped(ITestResult result) {
 		String message = "<b>Test Method::  " + result.getMethod().getMethodName() + " skipped</b>";
 		Markup m = MarkupHelper.createLabel(message, ExtentColor.YELLOW);
 		extentTest.get().log(Status.SKIP, m);
+		MyLog.endTestCase(result.getTestClass().getName());
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -75,5 +80,10 @@ public class MyListener implements ITestListener {
 		if (extent != null) {
 			extent.flush();
 		}
+	}
+	
+	// For report logging
+	public static ExtentTest logger() {
+		return extentTest.get();
 	}
 }

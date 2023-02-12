@@ -9,8 +9,8 @@
       <class name="testcases.MyTest">
         <methods>
           <include name="setUp"/>
-          <include name="test_01"/>
           <include name="tearDown"/>
+          <include name="validateErrorMessageOnContactPage"/>
         </methods>
       </class> <!-- testcases.MyTest -->
     </classes>

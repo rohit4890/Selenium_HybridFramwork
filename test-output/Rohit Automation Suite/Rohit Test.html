@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 10 20:13:51 ACDT 2023</td>
+<td>Started on:</td><td>Sun Feb 12 22:11:23 ACDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23584 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29527 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.MyTest.test_01()'><b>test_01</b><br>Test class: testcases.MyTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at testcases.MyTest.test_01(MyTest.java:18)
+<td title='testcases.MyTest.validateErrorMessageOnContactPage()'><b>validateErrorMessageOnContactPage</b><br>Test class: testcases.MyTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Message is required] but found [Forename is required]
+	at testcases.MyTest.validateErrorMessageOnContactPage(MyTest.java:124)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace253722034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace253722034'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at testcases.MyTest.test_01(MyTest.java:18)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1516384232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1516384232'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [Message is required] but found [Forename is required]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testcases.MyTest.validateErrorMessageOnContactPage(MyTest.java:124)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -114,8 +114,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>testcases.MyTest@6f63b475</td></tr>
+<td>16</td>
+<td>testcases.MyTest@b2c5e07</td></tr>
 </table><p>
 </body>
 </html>
